@@ -43,6 +43,8 @@ We used **GridSearchCV** for:
 
 The tuned model with the lowest CV RMSE was selected and evaluated on a held-out test set.
 
+### Findings
+
 ## Key technical findings (high-level)
 Your exact numbers will appear after you run the notebooks, but typical patterns for this dataset:
 - `sqft_living` is usually the strongest single predictor of house value.
@@ -55,19 +57,6 @@ To be confident our model generalizes, we validated it using repeated train/vali
 
 We selected the model (GradientBoostingRegressor) that minimized **typical dollar error (RMSE)**. 
 
-### Findings
-
-## Key findings
-
--sqft_living and location are the strongest drivers of home prices in California.
--Models that can learn nonlinear relationships (Random Forest / Gradient Boosting) generally outperform simpler linear regression models.
--On average, the best model predicts house values within approximately tens of thousands of dollars, with larger errors occurring for very expensive homes.
-
-## Business interpretation
-
--The model is useful for estimating typical house prices across California regions.
-
--However, it is less reliable for extremely high-priced neighborhoods, where prices may depend on additional factors not captured in the dataset.
 
 ## Suggested next steps
 1. **Try log-transforming the target** (price) to reduce skew and improve stability, then transform predictions back.
