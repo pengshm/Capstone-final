@@ -52,10 +52,9 @@ Your exact numbers will appear after you run the notebooks, but typical patterns
 - Tree-based models often outperform basic linear regression due to non-linear relationships.
 
 ### Nontechnical summary (plain language)
-We trained several algorithms to estimate home prices from neighborhood and location information.  
-To be confident our model generalizes, we validated it using repeated train/validation splits (cross-validation) and then tested it on a held-out dataset that the model never saw.
-
-We selected the model (GradientBoostingRegressor) that minimized **typical dollar error (RMSE)**. 
+- We trained several algorithms to estimate home prices from neighborhood and location information.  
+- To be confident our model generalizes, we validated it using repeated train/validation splits (cross-validation) and then tested it on a held-out dataset that the model never saw.
+- We selected the model (GradientBoostingRegressor) that minimized **typical dollar error (RMSE)**. 
 
 
 ## Suggested next steps
