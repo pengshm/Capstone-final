@@ -57,13 +57,13 @@ We selected the model (GradientBoostingRegressor) that minimized **typical dolla
 
 ### Findings
 
-##Key findings
+## Key findings
 
 -sqft_living and location are the strongest drivers of home prices in California.
 -Models that can learn nonlinear relationships (Random Forest / Gradient Boosting) generally outperform simpler linear regression models.
 -On average, the best model predicts house values within approximately tens of thousands of dollars, with larger errors occurring for very expensive homes.
 
-##Business interpretation
+## Business interpretation
 
 -The model is useful for estimating typical house prices across California regions.
 
