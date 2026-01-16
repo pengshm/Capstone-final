@@ -43,15 +43,15 @@ We used **GridSearchCV** for:
 
 The tuned model with the lowest CV RMSE was selected and evaluated on a held-out test set.
 
-### Findings
+## Findings
 
-## Key technical findings (high-level)
+### Key technical findings (high-level)
 Your exact numbers will appear after you run the notebooks, but typical patterns for this dataset:
 - `sqft_living` is usually the strongest single predictor of house value.
 - Geographic variables (`zipcode`) provide a strong signal (prices cluster by region).
 - Tree-based models often outperform basic linear regression due to non-linear relationships.
 
-## Nontechnical summary (plain language)
+### Nontechnical summary (plain language)
 We trained several algorithms to estimate home prices from neighborhood and location information.  
 To be confident our model generalizes, we validated it using repeated train/validation splits (cross-validation) and then tested it on a held-out dataset that the model never saw.
 
